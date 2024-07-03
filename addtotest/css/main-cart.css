@@ -1,0 +1,126 @@
+@import "./../fonts/Gilroy/stylesheet.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@400;600&display=swap");
+@import "./reset-cart.css";
+@import "./product-img.css";
+@import "./cart.css";
+@import "./simplebar.css";
+@import "./product-grid.css";
+@import "./order.css";
+
+
+
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.none {
+	display: none !important;
+}
+
+
+:root {
+	--color-dark: #4d4d4d;
+	--color-light: #808080;
+	--color-accent: #5d71dd;
+	--text-color: #1e1e1e;
+	--text-muted: #8d8d8d;
+	--text-card-dark-blue: #0d1b39;
+	--accent: #e58411;
+
+	--header-text-color: #ffffff;
+
+	--footer-accent: #f6973f;
+	--footer-bg: #2d2f33;
+	--footer-text-color: rgba(255, 255, 255, 0.8);
+
+	--ui-orange: #e58411;
+	--ui-biruza: #00d6c9;
+	--ui-gray: #7c7c7c;
+	--ui-dark-blue: #0d1b39;
+
+	--font-main: 'Gilroy', sans-serif;
+	--font-cards: 'Inter', sans-serif;
+	--font-footer-accent: 'DM Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	margin: 0;
+	overflow-anchor: none;
+}
+
+
+main{
+	padding-top: 100px;
+}
+
+.product {
+
+	width: 285px;
+
+	padding-top: 9px;
+	padding: 20px;
+
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+.product__switch {
+}
+
+.product__title {
+}
+.product_props {
+}
+.product__rating {
+}
+.product__testimonials {
+}
+.product__info {
+}
+.product__term {
+}
+.product__available {
+}
+.product__price {
+}
+.product-price {
+}
+.product__price-current {
+}
+.product__price-old {
+}
+.btn {
+	border: none;
+	padding: 14px 0;
+	border-radius: 4px;
+	color: #fff;
+	background-color: var(--ui-dark-blue);
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background-color: #6078F1;
+	transition: background-color 0.3s ease-in-out;
+}

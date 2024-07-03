@@ -1,0 +1,26 @@
+@media (max-width: 1150px) {
+  .item {
+    width: auto;
+  }
+  .listProduct {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 629px) {
+  .order-modal {
+    max-width: 400px;
+  }
+  .order__input {
+    max-width: 130px;
+  }
+  .order__btn {
+    max-width: 240px;
+    margin: auto;
+  }
+  .item {
+    width: auto;
+  }
+  .listProduct {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=mobile-ad.css.map */

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" Sakarias Armchair",
+        "price": 155,
+        "image": "img/products/w1.webp"
+    },
+    {
+        "id": 2,
+        "name":" Baltsar Chair",
+        "price": 170,
+        "image": "img/products/w2.webp"
+    },
+    {
+        "id": 3,
+        "name":" Anjay Chair",
+        "price": 229,
+        "image": "img/products/w3.webp"
+    },
+    {
+        "id": 4,
+        "name":" Nyantuy Chair",
+        "price": 210,
+        "image": "img/products/w4.webp"
+    },
+    {
+        "id": 5,
+        "name":" Sakarias Armchair",
+        "price": 300,
+        "image": "img/products/w5.webp"
+    },
+    {
+        "id": 6,
+        "name":" Baltsar Chair",
+        "price": 200,
+        "image": "img/products/w6.webp"
+    },
+    {
+        "id": 7,
+        "name":" Nyantuy ChairR",
+        "price": 200,
+        "image": "img/products/w7.webp"
+    },
+    {
+        "id": 8,
+        "name":" Sakarias Armchai",
+        "price": 200,
+        "image": "img/products/w8.webp"
+    }
+
+]

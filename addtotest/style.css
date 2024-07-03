@@ -1,0 +1,144 @@
+
+
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.cart__img active{
+    position: relative;
+}
+
+
+
+.cart__count span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large;
+}
+
+
+
+.listProduct{
+    grid-column: 4 span;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.listProduct {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.item{
+    padding-bottom: 70px;
+    width: 268px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.listProduct .item h2{
+    color: #0d1b39;
+    font-size: 21px;
+    font-weight: 600;
+}
+.listProduct .item .price {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.listProduct .item button{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 38px;
+    background-color: #0d1b39;
+    border-radius: 100px;
+
+
+    transition: opacity 0.2s ease-in;
+
+    box-shadow: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+/* cart */
+.cartTab{
+    position: absolute;
+    cursor: default;
+	z-index: 4;
+	right: 0;
+	top: 100%;
+	width: 440px;
+	background-color: #fff;
+	box-shadow: 0px 4px 4px rgba(135, 135, 135, 0.25);
+	transition: opacity 0.3s, visibility 0.3s;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+
+
+
+.item-cart{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 12px 20px;
+    transition: background-color 0.3s;
+    color: black;
+}
+
+.quantity{
+    margin-left: auto;
+}
+
+.cart__content-list{
+    overflow: auto;
+}
+
+
+
+.pls{
+    max-width: 16px;
+}
+
+

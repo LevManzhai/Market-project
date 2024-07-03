@@ -1,0 +1,66 @@
+@mixin retina-bg($image) {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background-image: $image;
+	}
+}
+
+@mixin desktop-small() {
+	@media (max-width: 1400px) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media (max-width: 1150px) {
+		@content;
+	}
+}
+
+@mixin mobile-xl () {
+	@media (max-width: 875px) {
+		@content;
+	}
+}
+
+@mixin mobile () {
+	@media (max-width: 629px) {
+		@content;
+	}
+}
+
+
+
+@include tablet {
+    .item {
+        width: auto;
+    }
+
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include mobile {
+	.order-modal{
+		max-width: 400px;
+	}
+
+	.order__input{
+		max-width: 130px;
+	}
+
+	.order__btn{
+		max-width: 240px;
+		margin: auto;
+	}
+
+    .item {
+        width: auto;
+    }
+
+    .listProduct {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+	
+}

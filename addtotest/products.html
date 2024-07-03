@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorgMag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./modals/modal.css">
+    <link rel="stylesheet" href="./css/main-cart.css">
+    <script defer src="./js/inputmask.min.js"></script>
+    <script defer src="./js/just-validate.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav nav">
+                <div class="nav__logo">
+                    <a href="./../index.html" class="logo">TorgMag</a>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="#!" class="nav-list__link nav-list__link--dropdown">Furniture</a>
+    
+                        <div class="nav-list__sub-nav">
+                            <ul class="sub-nav">
+                                <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Home</a></li>
+                                <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Services</a></li>
+                                <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Products</a></li>
+                                <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Contacts</a></li>
+                            </ul>
+                        </div>
+    
+                    </li>
+                    <li class="nav-list__item"><a href="#!" class="nav-list__link">Shop</a></li>
+                    <li class="nav-list__item"><a href="#!" class="nav-list__link">About Us</a></li>
+                    <li class="nav-list__item"><a href="#!" class="nav-list__link">Contact</a></li>
+                </ul>
+                <div class="header__cart cart active" tabindex="0">
+                    <img class="cart__img active" src="./img/icons/Bag.svg" alt="">
+                    <span class="cart__count">0</span>
+                    <div class="cart__content">
+                        <ul class="cart__content-list" data-simplebar></ul>
+                        <div class="cart__content-bottom">
+                            <div class="cart__content-fullprice">
+                                <span>Total:</span>
+                                <span class="fullprice"></span>
+                                <span></span>
+                            </div>
+                            <button class="cart__content-btn btn" data-graph-path="modal" data-graph-animation="fadeInUp" data-graph-speed="500">Move to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="open-mobile-nav-btn" class="nav__btn">
+                    <img src="./img/icons/mobile-nav.svg" alt="Open navigation">
+                </button>
+            </nav>
+        </div>
+        <div id="mobile-nav" class="mobile-nav-wrapper">
+            <div class="mobile-nav-header">
+                <a href="#cart" class="mobile-cart">
+                    <div href="#!" class="cart">
+                       
+                    </div>
+                </a>
+                <button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+                    <img src="./img/icons/close.svg" alt="close navigation">
+                </button>
+            </div>
+            <ul class="mobile-nav">
+                <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link mobile-nav__link--dropdown">Furniture</a>
+                    <ul class="mobile-sub-nav">
+                        <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Home</a></li>
+                        <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Services</a></li>
+                        <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Products</a></li>
+                        <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Contacts</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">Shop</a></li>
+                <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">About Us</a></li>
+                <li class="mobile-nav__item"><a href="#!" class="mobile-nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="listProduct"></div>
+    </div>
+    <div class="modal">
+        <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+            <div class="modal-content order-modal__content">
+                <div class="order-modal__top">
+                    <h2 class="order-modal__title">Оформление заказа</h2>
+                    <span class="order-modal__number">Заказ № 3456 67</span>
+                </div>
+                <div class="order-modal__info">
+                    <div class="order-modal__quantity order-modal__info-item">Products in order: <span> </span></div>
+                    <div class="order-modal__summ order-modal__info-item">Total amount of the order: <span> </span></div>
+                    <div class="order-modal__products order-modal__info-item">
+                        <button class="order-modal__btn">Order list</button>
+                        <ul class="order-modal__list"></ul>
+                    </div>
+                </div>
+                <form action="#" class="order-modal__form order">
+                    <input type="hidden" name="theme" value="Обратный звонок">
+                    <label class="order__label">
+                        <span class="order__text">Your Name</span>
+                        <input type="text" name="Имя" class="order__input">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Phone number</span>
+                        <input type="tel" name="Телефон" class="order__input" placeholder="+380 (__)___-__-__">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Your email</span>
+                        <input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+                    </label>
+                    <button type="submit" name="send" class="order__btn btn">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container container--small">
+            <div class="footer__grid">
+    
+                <div class="footer__desc">
+                    
+                    <div class="footer__logo">
+                        <a class="logo" href="#!">TorgMag</a>
+                    </div>
+                    <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+    
+    
+    
+                </div>
+    
+                <nav class="footer__nav footer__nav--services">
+                    <h3 class="footer__nav--title">Services</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list--item"><a href="#!">Email Marketing</a></li>
+                        <li class="footer__list--item"><a href="#!">Campaigns</a></li>
+                        <li class="footer__list--item"><a href="#!">Branding</a></li>
+                    </ul>
+                </nav>
+    
+                <nav class="footer__nav">
+                    <h3 class="footer__nav--title">Furniture</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list--item"><a href="#!">Beds</a></li>
+                        <li class="footer__list--item"><a href="#!">Chair</a></li>
+                        <li class="footer__list--item"><a href="#!">All</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+    
+            <div class="footer__row">
+                
+                <div class="footer__copyright">Copyright © 2024</div>
+                
+                <div class="footer__links">
+                    <a href="#!">Terms & Conditions</a>
+                    <a href="#!">Privacy Policy</a>
+                </div>
+                
+    
+            </div>
+        </div>
+      </footer>
+    <script src="./modals/modal.js"></script>
+    <script src="./js/simplebar.js"></script>
+    <script src="./app.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
