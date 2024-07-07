@@ -132,14 +132,14 @@ body {
 .header {
   padding-top: 40px;
   background-color: var(--footer-bg);
-  background-image: url("./../../img/header/header.jpg");
+  background-image: url("./../img/header.jpg");
   background-size: cover;
   aspect-ratio: 1440/1084;
   color: var(--header-text-color);
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header {
-    background-image: url("./../../img/header/header-bg@2x.jpg");
+    background-image: url("./../img/header/header-bg@2x.jpg");
   }
 }
 .header a {
