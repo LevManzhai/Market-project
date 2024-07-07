@@ -12,7 +12,7 @@ body {
 .card-slider {
     height: 500px;
     display: flex;
-    width: 592px;
+    width: 670px;
     margin-right: 60px;
 }
 .card-slider__nav {

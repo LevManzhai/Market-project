@@ -1,27 +1,27 @@
 [
     {
         "id": 1,
-        "name":" Plaid metal trouser hangers, 40cm",
+        "name":" Plaid metal trouser hangers, 40 cm",
         "price": 15,
-        "image": "img/products/w1.webp"
+        "image": "img/products/product-1/w1.webp"
     },
     {
         "id": 2,
-        "name":" Hangers 38cm long wooden hangers",
+        "name":" Hangers 38 cm long wooden hangers",
         "price": 17,
-        "image": "img/products/w2.webp"
+        "image": "img/products/product-2/w2.webp"
     },
     {
         "id": 3,
-        "name":" Anjay Chair",
+        "name":" Hangers 45 cm long, wide wooden hangers",
         "price": 20,
-        "image": "img/products/w3.webp"
+        "image": "img/products/product-3/w3.webp"
     },
     {
         "id": 4,
-        "name":" Nyantuy Chair",
+        "name":" Hangers 43 cm long Viland wooden hangers",
         "price": 25,
-        "image": "img/products/w4.webp"
+        "image": "img/products/product-4/w4.webp"
     },
     {
         "id": 5,

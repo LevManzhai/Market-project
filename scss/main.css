@@ -260,6 +260,7 @@ body {
 }
 
 .nav-list__sub-nav {
+  z-index: 99999;
   opacity: 0;
   width: 160px;
   pointer-events: none;
@@ -277,6 +278,7 @@ body {
 }
 
 .sub-nav {
+  z-index: 99999;
   display: grid;
   gap: 16px;
   padding: 20px;

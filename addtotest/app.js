@@ -39,20 +39,28 @@ const addDataToHTML = () => {
     if (products.length > 0) {
         products.forEach(product => {
             let newProduct = document.createElement('article');
+            let productLink;
+            if (product.id === 1) {
+                productLink = './SakariasArmchair.html';
+            } else if (product.id === 2) {
+                productLink = './Hangers38cm.html';
+            } else if(product.id === 3) {
+                productLink = './Hangers45cm.html';
+            }
             newProduct.dataset.id = product.id;
             newProduct.classList.add('item');
-            newProduct.innerHTML = 
-            `<a href="./SakariasArmchair.html">
-            <div class="card__photo">
-                <img src="${product.image}" class="card__img-prod" alt="">
-            </div>
-            <div class="card__desc">
-                <h3 class="card__title">${product.name}</h3>
-                <a href="#" class="card__category">Hanger</a>
-                <div class="card__price" data-value="$">${product.price}</div>
-            </div>
-            <button class="addCart">Add To Cart</button>
-            </a>`;
+            newProduct.innerHTML = `
+                <a href="${productLink}">
+                    <div class="card__photo">
+                        <img src="${product.image}" class="card__img-prod" alt="">
+                    </div>
+                    <div class="card__desc">
+                        <h3 class="card__title">${product.name}</h3>
+                        <a href="#" class="card__category">Hanger</a>
+                        <div class="card__price" data-value="$">${product.price}</div>
+                    </div>
+                    <button class="addCart">Add To Cart</button>
+                </a>`;
             listProductHTML.appendChild(newProduct);
         });
     }
