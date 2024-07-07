@@ -48,7 +48,7 @@ const addDataToHTML = () => {
             </div>
             <div class="card__desc">
                 <h3 class="card__title">${product.name}</h3>
-                <a href="#" class="card__category">Chair</a>
+                <a href="#" class="card__category">Hanger</a>
                 <div class="card__price" data-value="$">${product.price}</div>
             </div>
             <button class="addCart">Add To Cart</button>
@@ -261,7 +261,7 @@ const updateModalDetails = () => {
                 <img class="order-product__img" src="${product.image}" alt="">
                 <div class="order-product__text">
                     <h3 class="order-product__title">${product.name}</h3>
-                    <div class="quantity">
+                    <div class="quantity__modal">
                         <span class="minus">-</span>
                         <span>${item.quantity}</span>
                         <span class="plus">+</span>

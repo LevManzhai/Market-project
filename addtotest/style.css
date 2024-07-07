@@ -156,8 +156,12 @@ body.showCart .container{
 }
 
 .quantity{
-    width: 52px;
     margin-left: auto;
+    min-width: 50px;
+}
+
+.quantity__modal{
+    width: 55px;
 }
 
 .cart__content-list{

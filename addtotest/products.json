@@ -2,49 +2,49 @@
     {
         "id": 1,
         "name":" Plaid metal trouser hangers, 40cm",
-        "price": 155,
+        "price": 15,
         "image": "img/products/w1.webp"
     },
     {
         "id": 2,
         "name":" Hangers 38cm long wooden hangers",
-        "price": 170,
+        "price": 17,
         "image": "img/products/w2.webp"
     },
     {
         "id": 3,
         "name":" Anjay Chair",
-        "price": 229,
+        "price": 20,
         "image": "img/products/w3.webp"
     },
     {
         "id": 4,
         "name":" Nyantuy Chair",
-        "price": 210,
+        "price": 25,
         "image": "img/products/w4.webp"
     },
     {
         "id": 5,
         "name":" Sakarias Armchair",
-        "price": 300,
+        "price": 30,
         "image": "img/products/w5.webp"
     },
     {
         "id": 6,
         "name":" Baltsar Chair",
-        "price": 200,
+        "price": 35,
         "image": "img/products/w6.webp"
     },
     {
         "id": 7,
         "name":" Nyantuy ChairR",
-        "price": 200,
+        "price": 40,
         "image": "img/products/w7.webp"
     },
     {
         "id": 8,
         "name":" Sakarias Armchai",
-        "price": 200,
+        "price": 45,
         "image": "img/products/w8.webp"
     }
 
