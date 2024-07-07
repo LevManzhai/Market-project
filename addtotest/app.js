@@ -120,16 +120,16 @@ const addCartToHTML = () => {
     printFullPrice();
 };
 
-// Проверка всех мест, где изменяется значение cart__count
+
 const updateCartCount = (newCount) => {
     iconCartSpan.textContent = newCount;
     console.log('Updated cart count:', newCount);
 };
 
-// Другие функции, которые могут изменять значение cart__count
+
 const someFunction = () => {
-    // Возможно здесь где-то изменяется значение
-    updateCartCount(0); // Это только пример
+  
+    updateCartCount(0); 
 };
 
 listCartHTML.addEventListener('click', (event) => {
