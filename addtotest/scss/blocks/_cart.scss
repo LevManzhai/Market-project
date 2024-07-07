@@ -36,7 +36,7 @@
 	padding-top: 90px;
 }
 
-.cart__content-list .item-cart img{
+.photo__product{
     width: 100px;
 
     @include mobile () {
@@ -88,7 +88,7 @@
 	color: var(--text-color);
 	font-weight: 500;
     font-size: 16px;
-    line-height: 185%;
+    line-height: 130%;
     opacity: 0.8;
 }
 

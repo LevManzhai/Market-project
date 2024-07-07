@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorgMag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="./modals/modal.css">
+    <link rel="stylesheet" href="./css/main-cart.css">
+    <script defer src="./js/inputmask.min.js"></script>
+    <script defer src="./js/just-validate.min.js"></script>
+    <link rel="stylesheet" href="./css/slider.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+
+            <nav class="header__nav nav">
+
+
+                <div class="nav__logo">
+                <a href="./../index.html" class="logo">TorgMag</a>
+            </div>
+
+
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="#!" class="nav-list__link nav-list__link--dropdown">Furniture</a>
+
+                    <div class="nav-list__sub-nav">
+                        <ul class="sub-nav">
+                            <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Home</a></li>
+                            <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Services</a></li>
+                            <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Products</a></li>
+                            <li class="sub-nav__item"><a href="#!" class="sub-nav__link">Contacts</a></li>
+                        </ul>
+                    </div>
+
+                    
+                </li>
+                <li class="nav-list__item">
+                    <a href="#!" class="nav-list__link">Shop</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#!" class="nav-list__link">About Us</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#!" class="nav-list__link">Contact</a>
+                </li>
+            </ul>
+                
+            <div class="header__cart cart active" tabindex="0">
+                    <img class="cart__img active" src="./img/icons/Bag.svg" alt="">
+                    <span class="cart__count">0</span>
+
+                <div class="cart__content">
+                    <ul class="cart__content-list" data-simplebar>
+                  
+        
+                    </ul>
+                    <div class="cart__content-bottom">
+                        <div class="cart__content-fullprice">
+                            <span>Total:</span>
+                            <span class="fullprice">0$</span>
+                            <span></span>
+                        </div>
+                        <button class="cart__content-btn btn" data-graph-path="modal" data-graph-animation="fadeInUp" data-graph-speed="500">Move to cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+                <button id="open-mobile-nav-btn" class="nav__btn">
+                    <img src="./img/icons/mobile-nav.svg" alt="Open navigaion">
+                </button>
+                
+            </nav>
+
+    
+     </div>
+
+
+     <div id="mobile-nav" class="mobile-nav-wrapper">
+
+        <div class="mobile-nav-header">
+            <a href="#cart" class="mobile-cart">
+                <div href="#!" class="cart">
+                    <img class="cart__img" src="./img/icons/Bag.svg" alt="">
+                    <div class="cart__count">0</div>
+                </div>
+                Cart
+            </a>
+
+            <button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+                <img src="./img/icons/close.svg" alt="close navigation">
+            </button>
+
+        </div>
+
+   
+
+   
+
+     <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+            <a href="#!" class="mobile-nav__link mobile-nav__link--dropdown">Furniture</a>
+
+        <ul class="mobile-sub-nav">
+            <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Home</a></li>
+            <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Services</a></li>
+            <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Products</a></li>
+            <li class="mobile-sub-nav__item"><a href="#!" class="mobile-sub-nav__link">Contacts</a></li>
+        </ul>
+        </li>
+
+        <li class="mobile-nav__item">
+            <a href="#!" class="mobile-nav__link">Shop</a>
+        </li>
+
+        <li class="mobile-nav__item">
+            <a href="#!" class="mobile-nav__link">About Us</a>
+        </li>
+
+        <li class="mobile-nav__item">
+            <a href="#!" class="mobile-nav__link">Contact</a>
+        </li>
+
+    </ul>
+
+</div>
+
+  </header>
+<div class="listProduct none" data-id="1"></div>
+<div class="modal">
+    <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+        <div class="modal-content order-modal__content">
+            <div class="order-modal__top">
+                <h2 class="order-modal__title">Placing an order</h2>
+                <span class="order-modal__number">Order No. 3456 67</span>
+            </div>
+            <div class="order-modal__info">
+                <div class="order-modal__quantity order-modal__info-item">Products in order: <span> </span></div>
+                <div class="order-modal__summ order-modal__info-item">Total amount of the order: <span> </span></div>
+                <div class="order-modal__products order-modal__info-item">
+                    <button class="order-modal__btn">Order list</button>
+                    <ul class="order-modal__list"></ul>
+                </div>
+            </div>
+            <form action="#" class="order-modal__form order">
+                <input type="hidden" name="theme" value="Обратный звонок">
+                <label class="order__label">
+                    <span class="order__text">Your Name</span>
+                    <input type="text" name="Имя" class="order__input">
+                </label>
+                <label class="order__label">
+                    <span class="order__text">Phone number</span>
+                    <input type="tel" name="Телефон" class="order__input" placeholder="+380 (__)___-__-__">
+                </label>
+                <label class="order__label">
+                    <span class="order__text">Your email</span>
+                    <input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+                </label>
+                <button type="submit" name="send" class="order__btn btn">Оформить заказ</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="card">
+        <div class="card-slider">
+            <div class="card-slider__nav slider-nav">
+                <div class="slider-nav__item" tabindex="0"><img src="./img/products/w1.webp" alt=""></div>
+                <div class="slider-nav__item" tabindex="0"><img src="./img/products/w1-1.webp" alt=""></div>
+                <div class="slider-nav__item" tabindex="0"><img src="./img/products/w1-3.webp" alt=""></div>
+                <div class="slider-nav__item" tabindex="0"><img src="./img/products/w1-4.webp" alt=""></div>
+                <div class="slider-nav__item" tabindex="0"><img src="./img/products/w1-5.webp" alt=""></div>
+                
+            </div>
+            <div class="card-slider__block slider-block">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="././img/products/w1-11.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="././img/products/w1-22.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="././img/products/w1-33.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="././img/products/w1-44.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="././img/products/w1-55.webp" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card-info">
+            <span class="vendor">Articul: 9979745</span>
+            <h1 class="title">Plaid metal trouser hangers, 40 cm</h1>
+            <div class="testimonials">
+                <div class="rating">
+                    <img src="./img/icons/Star.svg" alt="rating 5/5">
+                    <img src="./img/icons/Star.svg" alt="">
+                    <img src="./img/icons/Star.svg" alt="">
+                    <img src="./img/icons/Star.svg" alt="">
+                    <img src="./img/icons/Star.svg" alt="">
+                </div>
+                <a href="#" class="testimonials__link">Review</a>
+            </div>
+            <span class="available">In stock: 15 sht</span>
+            <div class="price">
+                <span class="price__current">155$</span>
+
+            </div>
+            <button id="addCart2">Add to Cart</button>
+           
+                <div class="Description">
+                <h1><b>Description</b></h1>
+                </div>
+                <div class="Description__content">
+                <p>
+                    Wooden hanger hangers, wide, brown<br>
+
+
+                    Length: 45 cm<br>
+
+                    Shoulder Width: 4.8cm<br>
+
+
+                    This model is designed for any type of clothing.<br>
+
+
+                    Made of natural wood, the surface is treated with a special varnish coating. They have the correct tailor's shape and widened shoulder, which will not allow the clothes to stretch out and they will retain a freshly ironed look longer. The hook is rotating, of improved design.<br>
+
+
+                    Wooden hangers are strong, practical and durable!<br>
+
+
+                    You can place an order through the shopping cart 24 hours a day.<br>
+
+                    We will also be happy to answer your questions from 9.00 to 21.00<br>
+                </p>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </div>
+    <div class="modal">
+        <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+            <div class="modal-content order-modal__content">
+                <div class="order-modal__top">
+                    <h2 class="order-modal__title">Оформление заказа</h2>
+                    <span class="order-modal__number">Заказ номер 43334343</span>
+                </div>
+                <div class="order-modal__info">
+                    <div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span class="quantity">3 шт</span></div>
+                    <div class="order-modal__sum order-modal__info-item">Общая сумма заказа: <span class="summ">10</span><span> $</span></div>
+                    <div class="order-modal__products order-modal__info-item">
+                        <button class="order-modal__btn">Состав заказа </button>
+                        <ul class="order-modal__list">
+                           
+                        
+                         
+                        </ul>
+                    </div>
+                </div>
+                <form action="ajax.php" enctype="application/x-www-form-urlencoded"  method="POST" class="order-modal__form order">
+                    <label class="order__label">
+                        <span class="order__text">Your name</span>
+                        <input type="text" name="name" data-validate-field="name" class="order__input">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Phone number</span>
+                        <input type="tel" name="tel" data-validate-field="tel" class="order__input" placeholder="+380 (__)___-__-__">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Your mail</span>
+                        <input type="email" name="email" data-validate-field="email" class="order__input" placeholder="post@gmail.com">
+                    </label>
+                   
+
+                    
+                    <button type="submit" name="send" class="order__btn btn">Submit order </button>
+                    
+                    <div id="success" class="alert-success alert mt-3" role="alert" style="display: none" ></div>
+                </form>
+                <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/simplebar.js"></script>
+
+    <footer class="footer">
+        <div class="container container--small">
+            <div class="footer__grid">
+    
+                <div class="footer__desc">
+                    
+                    <div class="footer__logo">
+                        <a class="logo" href="#!">TorgMag</a>
+                    </div>
+                    <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+    
+    
+    
+                </div>
+    
+                <nav class="footer__nav footer__nav--services">
+                    <h3 class="footer__nav--title">Services</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list--item"><a href="#!">Email Marketing</a></li>
+                        <li class="footer__list--item"><a href="#!">Campaigns</a></li>
+                        <li class="footer__list--item"><a href="#!">Branding</a></li>
+                    </ul>
+                </nav>
+    
+                <nav class="footer__nav">
+                    <h3 class="footer__nav--title">Furniture</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list--item"><a href="#!">Beds</a></li>
+                        <li class="footer__list--item"><a href="#!">Chair</a></li>
+                        <li class="footer__list--item"><a href="#!">All</a></li>
+                    </ul>
+                </nav>
+    
+            </div>
+    
+            <div class="footer__row">
+                
+                <div class="footer__copyright">Copyright © 2024</div>
+                
+                <div class="footer__links">
+                    <a href="#!">Terms & Conditions</a>
+                    <a href="#!">Privacy Policy</a>
+                </div>
+                
+    
+            </div>
+        </div>
+      </footer>
+      <script src="./modals/modal.js"></script>
+      <script src="./app.js"></script>
+      <script src="./js/simplebar.js"></script>
+      <script src="./js/main.js"></script>
+      <script src="./SakariasArmchair.js"></script>
+</body>
+</html>

@@ -42,7 +42,7 @@ const addDataToHTML = () => {
             newProduct.dataset.id = product.id;
             newProduct.classList.add('item');
             newProduct.innerHTML = 
-            `<a href="./buymenu.html">
+            `<a href="./SakariasArmchair.html">
             <div class="card__photo">
                 <img src="${product.image}" class="card__img-prod" alt="">
             </div>
@@ -102,7 +102,7 @@ const addCartToHTML = () => {
             let info = products[positionProduct];
             newItem.innerHTML = `
             <div class="image__cart">
-                <img src="${info.image}">
+                <img class="photo__product" src="${info.image}">
             </div>
             <div class="cart__product-text">
                 <div class="name">${info.name}</div>

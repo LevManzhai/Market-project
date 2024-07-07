@@ -52,6 +52,7 @@ header{
 }
 
 
+
 .listProduct .item h2{
     color: #0d1b39;
     font-size: 21px;
@@ -63,7 +64,26 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.listProduct .item button{
+#addCart2{
+    position: relative;
+    color: #fff;
+    width: 50%;
+    height: 38px;
+    background-color: #0d1b39;
+    border-radius: 100px;
+
+
+    transition: opacity 0.2s ease-in;
+
+    box-shadow: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.addCart {
     position: relative;
     color: #fff;
     width: 100%;
@@ -80,6 +100,14 @@ header{
     &:hover {
         opacity: 0.8;
     }
+}
+
+.Description {
+padding: 50px 0 20px;
+}
+
+.Description__content{
+    line-height: 30px;
 }
 
 /* cart */
@@ -128,6 +156,7 @@ body.showCart .container{
 }
 
 .quantity{
+    width: 52px;
     margin-left: auto;
 }
 

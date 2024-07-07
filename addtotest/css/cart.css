@@ -1,8 +1,4 @@
-.card {
-    position: relative;
-	width: 268px;
-    font-family: var(--font-cards);
-}
+
 
 .card__link {
     position: absolute;
@@ -33,7 +29,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
-
+    height: 150px;
 	padding: 14px 22px ;
 	background-color: #fff;
 	border-radius: 0 0 20px 20px;
@@ -51,6 +47,7 @@
     color: #0d1b39;
     font-size: 21px;
     font-weight: 600;
+    height: 50px;
     text-align: center;
 }
 
