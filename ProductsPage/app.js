@@ -46,7 +46,9 @@ const addDataToHTML = () => {
                 productLink = './Hangers38cm.html';
             } else if(product.id === 3) {
                 productLink = './Hangers45cm.html';
-            }
+            } else if(product.id === 4) {
+                productLink = './Hangers43cm.html';
+            }   
             newProduct.dataset.id = product.id;
             newProduct.classList.add('item');
             newProduct.innerHTML = `

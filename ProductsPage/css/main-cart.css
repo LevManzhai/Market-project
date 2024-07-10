@@ -1,5 +1,6 @@
 @import "./../fonts/Gilroy/stylesheet.css";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter:wght@400;600&display=swap");
+@import "./mobile-prodpage.css";
 @import "./reset-cart.css";
 @import "./product-img.css";
 @import "./cart.css";

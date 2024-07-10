@@ -469,6 +469,7 @@ body {
 }
 .mobile-nav-wrapper--open {
   display: block;
+  z-index: 99999;
 }
 
 .mobile-nav-header {
